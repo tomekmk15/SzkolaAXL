@@ -27,6 +27,24 @@ public class Skaner1 {
         System.out.println(x + " razy " + y + " = " + x*y);
         System.out.printf("%d razy %d = %d\n", x, y, x*y);
         
+        System.out.println("Wpisz liczbę z przecinkiem (!):");
+        double d = scanner.nextDouble();
+
+        System.out.println("Liczby: " +x + " , " + d);
+
+        System.out.print("Wpisz dwa słowa: ");
+        String slowo1 = scanner.next();
+        String slowo2 = scanner.next();
+
+        System.out.println("Pierwsze: " + slowo1);
+        System.out.println("Drugie  : " + slowo2);
+
+        // Gdy teraz wczytam "linię" co tam będzie? Reszta linii wpisana za tymi ↑ dwoma słowami
+        linia = scanner.nextLine();
+        System.out.println("Linia zawiera: " + linia);
+
+        System.out.println("KONIEC");
+
         // Teoretycznie Scanner jest zasobem i należałoby go zamknąć,
         // ale w praktyce, jeśli chodzi o System.in, to niezamknięcie nie jest błędem; nic złego by się nie stało.
         scanner.close();
