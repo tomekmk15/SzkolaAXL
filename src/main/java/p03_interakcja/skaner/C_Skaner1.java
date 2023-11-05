@@ -2,7 +2,7 @@ package p03_interakcja.skaner;
 
 import java.util.Scanner;
 
-public class Skaner1 {
+public class C_Skaner1 {
 
     public static void main(String[] args) {
         // Scanner to jest obiekt, który pobiera dane ze wskazanego źródła i na żądanie zwraca kolejne elementy
