@@ -20,10 +20,10 @@ public class TeoriaIf {
 		
 		// Jeśli za if-em lub else-em do wykonania jest tylko jedna instrukcja,
 		// to teoretycznie nie trzeba brać jej w nawiasy klamrowe
-		if(liczba % 2 == 0)
-			System.out.println("liczba jest parzysta");
-		else
-			System.out.println("liczba jest nieparzysta");
+        if(liczba % 2 == 0)
+            System.out.println("liczba jest parzysta");
+        else
+            System.out.println("liczba jest nieparzysta");
 		
 		// Ale ze względu na czytelność kodu oraz perspektywę dalszej modyfikacji
 		// lepiej od początku stosować nawiasy klamrowe.
