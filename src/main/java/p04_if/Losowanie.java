@@ -29,6 +29,11 @@ public class Losowanie {
 		// Od Java 7
 		int r = ThreadLocalRandom.current().nextInt();
 		System.out.println(r);
+		
+		char losowaLitera1 = (char)(65 + random.nextInt(26));
+		char losowaLitera2 = (char)('A' + random.nextInt('Z' - 'A' + 1));
+		System.out.print(losowaLitera1);
+		System.out.print(losowaLitera2);
 	}
 
 }
