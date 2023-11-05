@@ -7,13 +7,16 @@ public class PrzegladTypow {
 	public static void main(String[] args) {
 		// 8 typów prostych:
 		// liczby calkowite: byte, short, int, long
-		byte b = 100;
-		short s = 1000;
-		int i = 23;
-		long l = 333;
+	    // typy różnią się dostępnym zakresem wartości
+		byte b = 100;   // 1 bajt, zakres od -128 do +127
+		short s = 1000; // 2 bajty, zakres od ok -32k do + 32k
+		int i = 23;     // 4 bajty, zakres od - 2mld do + 2mld
+		long l = 333;   // liczby 18-19 cyfrowe
+		// nie opłaca się używać pojedynczych zmiennch typu bye i short, bo i tak sa w pamięci zaokgrąglane do 4 bajtów
+		// dość często używa się typu byte[] "tablica bajtów"
 		System.out.println(b * s * i * l);
 		
-		// 2 typy dla liczb z ułamkiem. liczby "zmiennopozycyjne" / "zmiennoprzeconkowe" (floating point)
+		// 2 typy dla liczb z ułamkiem. liczby "zmiennopozycyjne" / "zmiennoprzecinkowe" (floating point)
 		float f = 3.14F;
 		double d = 123.456;
 		System.out.println(f * d);
@@ -22,6 +25,7 @@ public class PrzegladTypow {
 		// char - pojedynczy znak, ale patrząc technicznie, to jest liczba 16-bitowa, która może być kodem znaku
 		char c = 'A';
 		System.out.println(c);
+		System.out.println((int)c); // 65
 		System.out.println(c+1); // kodem litery A jest 65
 		c++;
 		// teraz jednak "przesuwamy znak" o jedną pozycję do przodu
