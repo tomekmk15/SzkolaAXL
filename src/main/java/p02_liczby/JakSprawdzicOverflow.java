@@ -24,6 +24,4 @@ public class JakSprawdzicOverflow {
 
 }
 
-
 // YT   "Ariane 5"
-// przerwa do 13:30
